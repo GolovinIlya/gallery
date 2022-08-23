@@ -1,0 +1,73 @@
+:root {
+  --bg-dark: #000;
+  --bg-light: #fff;
+}
+
+.layout {
+  background: var(--bg-dark);
+  color: white;
+  min-height: 100vh;
+  &__light {
+    background: var(--bg-light);
+    color: var(--bg-dark);
+    min-height: 100vh;
+    .select__item {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      color: #000;
+      &::placeholder {
+        color: #000;
+      }
+    }
+    .input__item {
+      background: #fff;
+      color: #000;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .select__menuList {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      background: #fff;
+      color: #000;
+      &::-webkit-scrollbar-thumb {
+        background-color: #7b7b7b;
+        border: 8px solid #fff;
+      }
+    }
+    .select__liBlock {
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+    .select__menuCreated {
+      background: #fff;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .select__input {
+      border: none;
+      background: #efefef;
+    }
+    .select__span {
+      color: #000;
+    }
+
+    .pagination__item {
+      background: #fff;
+      border: 1px solid #000;
+      color: #000;
+      &:hover {
+        background: #ededed;
+      }
+      &_active {
+        background: #000;
+        color: #fff;
+      }
+      &_noactive {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

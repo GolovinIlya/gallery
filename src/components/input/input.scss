@@ -1,0 +1,36 @@
+.input {
+  width: 100%;
+  margin-right: 20px;
+  height: 45px;
+  color: #fff;
+  z-index: 300;
+  position: relative;
+  &__item {
+    width: 100%;
+    background: #0c0c0c;
+    outline: none;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    &_active {
+      border-bottom: 1px solid #ffffff4d;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .input {
+    max-width: 44%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .input {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
