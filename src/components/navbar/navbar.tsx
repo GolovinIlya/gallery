@@ -3,7 +3,6 @@ import { HandySvg } from "handy-svg";
 import iconSrc from "./logo.svg";
 import iconSrc2 from "./Vector.svg";
 import iconSrcLight from "./VectorLight.svg";
-import iconLogoLight from "./logoLight2.svg";
 import "./navbar.scss";
 import { useTheme } from "../hooks/useTheme";
 
@@ -12,23 +11,13 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      {!isLight ? (
-        <HandySvg
-          fill="none"
-          src={iconSrc}
-          className="icon"
-          width="64"
-          height="64"
-        />
-      ) : (
-        <HandySvg
-          src={iconLogoLight}
-          className="icon"
-          fill="none"
-          width="64"
-          height="64"
-        />
-      )}
+      <HandySvg
+        fill="none"
+        src={iconSrc}
+        className="icon"
+        width="64"
+        height="64"
+      />
       <button
         className="navbar__btn"
         onClick={() => setIsLight && setIsLight(!isLight)}
